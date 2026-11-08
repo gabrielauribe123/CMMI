@@ -1,0 +1,312 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    color: #333;
+    line-height: 1.6;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.boton {
+    display: inline-block;
+    background: #10b981;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 6px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.boton:hover {
+    background: #059669;
+}
+
+.boton.blanco {
+    background: white;
+    color: #10b981;
+}
+
+.boton.blanco:hover {
+    background: #f0fdf4;
+}
+
+.enlace {
+    background: transparent;
+    color: #10b981;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.enlace.blanco {
+    color: #10b981;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.cabecera {
+    background: #0f172a;
+    color: white;
+    padding: 60px 0 100px;
+}
+
+.cabecera .subtitulo {
+    font-size: 14px;
+    opacity: 0.7;
+    margin-bottom: 10px;
+}
+
+.cabecera h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    max-width: 600px;
+}
+
+.cabecera p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    max-width: 500px;
+    opacity: 0.8;
+}
+
+.caracteristicas {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.caracteristicas h2 {
+    font-size: 24px;
+    margin-bottom: 40px;
+    color: #0f172a;
+}
+
+.item .icono {
+    font-size: 30px;
+    color: #10b981;
+    margin-bottom: 15px;
+}
+
+.item h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.item p {
+    color: #64748b;
+    font-size: 14px;
+}
+
+.bloque-verde {
+    background: #10b981;
+    color: white;
+    padding: 70px 0;
+}
+
+.bloque-verde h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.bloque-verde p {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.bloque-verde .imagen {
+    text-align: center;
+}
+
+.bloque-claro {
+    background: #f8fafc;
+    padding: 70px 0;
+}
+
+.bloque-claro h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #0f172a;
+}
+
+.bloque-claro p {
+    margin-bottom: 15px;
+    color: #475569;
+}
+
+.niveles {
+    padding: 70px 0;
+    text-align: center;
+}
+
+.niveles h2 {
+    font-size: 28px;
+    margin-bottom: 50px;
+    color: #0f172a;
+}
+
+.tarjeta {
+    padding: 40px 25px;
+    border-radius: 10px;
+    border: 2px solid #e2e8f0;
+    transition: all 0.3s;
+}
+
+.tarjeta.destacada {
+    background: #0f172a;
+    color: white;
+    border-color: #10b981;
+    transform: scale(1.05);
+}
+
+.tarjeta h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #64748b;
+}
+
+.tarjeta.destacada h3 {
+    color: #94a3b8;
+}
+
+.tarjeta .numero {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.tarjeta p {
+    font-size: 14px;
+    color: #64748b;
+    margin-bottom: 20px;
+}
+
+.tarjeta.destacada p {
+    color: #cbd5e1;
+}
+
+.contacto {
+    background: #0f172a;
+    color: white;
+    padding: 70px 0;
+}
+
+.contacto h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contacto p {
+    margin-bottom: 30px;
+    color: #94a3b8;
+}
+
+.logos {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    font-size: 14px;
+    color: #64748b;
+}
+
+.formulario input,
+.formulario textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 6px;
+    background: #1e293b;
+    color: white;
+    font-size: 14px;
+}
+
+.formulario textarea {
+    height: 100px;
+}
+
+.pie {
+    background: #0f172a;
+    color: #64748b;
+    padding: 20px 0;
+    border-top: 1px solid #1e293b;
+    font-size: 13px;
+}
+
+.pie .contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.redes {
+    display: flex;
+    gap: 10px;
+}
+
+@media (max-width: 480px) {
+
+    .grid-2,
+    .grid-3 {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .cabecera h1 {
+        font-size: 26px;
+    }
+
+    .cabecera p {
+        font-size: 15px;
+    }
+
+    .tarjeta.destacada {
+        transform: none;
+    }
+
+    .bloque-verde,
+    .bloque-claro,
+    .caracteristicas,
+    .niveles,
+    .contacto {
+        padding: 40px 0;
+    }
+
+    .pie .contenedor {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .boton {
+        padding: 10px 20px;
+        font-size: 15px;
+    }
+}
